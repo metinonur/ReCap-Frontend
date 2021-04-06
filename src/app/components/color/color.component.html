@@ -1,12 +1,10 @@
 <table class="table">
   <thead>
     <tr>
-      <th>Renk numarası</th>
       <th>Renk ismi</th>
     </tr>
   </thead>
-    <tr *ngFor="let color of colors">
-      <td>{{color.colorId}}</td>
-      <td>{{color.colorName}}</td>
-    </tr>
+  <ul class="list-group">
+    <li  class="list-group-item" *ngFor="let color of colors">{{color.colorName}}</li>
+  </ul>
   </table>
