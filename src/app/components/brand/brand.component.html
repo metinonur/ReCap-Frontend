@@ -1,4 +1,10 @@
 <table class="table">
+  <thead>
+    <tr>
+      <th>Marka numarası</th>
+      <th>Marka adı</th>
+    </tr>
+  </thead>
   <tr *ngFor="let brand of brands">
     <td>{{brand.brandId}}</td>
     <td>{{brand.brandName}}</td>
