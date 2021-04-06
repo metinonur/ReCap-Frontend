@@ -7,12 +7,11 @@ import { CarResponseModel } from '../models/carResponseModel';
   providedIn: 'root'
 })
 export class CarService {
-
+  apiUrl ="https://localhost:44367/api/cars/getall"
   constructor(private httpClient:HttpClient) { }
-  apiUrl ="https://localhost:44367/api/"
-  getCars(): Observable <CarResponseModel>{
-    const newPath = this.apiUrl + 'cars/getcardetail';
-    return this.httpClient.get<CarResponseModel>(newPath);
+  
+  getCars():Observable<CarResponseModel>{
+    return this.httpClient.get<CarResponseModel>(this.apiUrl)
   }
 
 }

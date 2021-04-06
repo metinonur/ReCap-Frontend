@@ -1,4 +1,13 @@
 <table class="table">
+  <thead>
+    <tr>
+      <th>Kiralama no</th>
+      <th>Araç adı</th>
+      <th>Şirket adı</th>
+      <th>Kiralanan tarih</th>
+      <th>Teslim tarihi</th>
+    </tr>
+  </thead>
     <tr *ngFor="let rental of rentals">
       <td>{{rental.rentalId}}</td>  
       <td>{{rental.carName}}</td>
