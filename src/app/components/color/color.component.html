@@ -5,6 +5,8 @@
     </tr>
   </thead>
   <ul class="list-group">
-    <li  class="list-group-item" *ngFor="let color of colors">{{color.colorName}}</li>
+    <li (click)="setCurrentColor(color)" [class]="getCurrentColorClass(color)" *ngFor="let color of colors">{{color.colorName}}</li>
   </ul>
   </table>
+
+  <h5 *ngIf="currentColor">{{currentColor.colorName}} seçtiniz</h5>

@@ -27,11 +27,10 @@ export class BrandComponent implements OnInit {
     this.currentBrand=brand;
   }
   getCurrentBrandClass(brand:Brand){
-    if(brand==this.currentBrand){
-      return "list-group item active"
-    }
-    else{
-      return "list-group item"
+    if (brand==this.currentBrand) {
+      return "list-group-item active"
+    } else {
+      return "list-group-item"
     }
   }
 }
