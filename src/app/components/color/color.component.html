@@ -5,7 +5,10 @@
     </tr>
   </thead>
   <ul class="list-group">
-    <li (click)="setCurrentColor(color)" [class]="getCurrentColorClass(color)" *ngFor="let color of colors">{{color.colorName}}</li>
+    <li (click)="setCurrentColor(color)"
+     [class]="getCurrentColorClass(color)" 
+     routerLink="/cars/color/{{color.colorId}}"
+     *ngFor="let color of colors">{{color.colorName}}</li>
   </ul>
   </table>
 
